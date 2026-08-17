@@ -1,16 +1,15 @@
 FROM python:3.10-slim
 
-# FFmpeg aur zaroori system tools install karein
+# System tools & FFmpeg install
 RUN apt-get update && apt-get install -y ffmpeg git && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-# Requirements install karein
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Pehle sara code COPY karein taake subfolders ya path issue khatam ho jaye
+COPY . /app/
 
-# Application code copy karein
-COPY . .
+# Requirements install karein
+RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 8501
 
