@@ -1,9 +1,7 @@
-fastapi
-uvicorn
+streamlit
 yt-dlp
-ffmpeg-python
 moviepy
 librosa
 soundfile
-jinja2
-python-multipart
+numpy
+ffmpeg-python
