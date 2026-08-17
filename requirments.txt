@@ -4,4 +4,3 @@ moviepy
 librosa
 soundfile
 numpy
-ffmpeg-python
