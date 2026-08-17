@@ -1,1 +1,9 @@
-
+fastapi
+uvicorn
+yt-dlp
+ffmpeg-python
+moviepy
+librosa
+soundfile
+jinja2
+python-multipart
